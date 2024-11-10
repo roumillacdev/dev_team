@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+dev_team
+dev_team é um projeto desenvolvido para facilitar a gestão de equipes de desenvolvimento, permitindo que os membros da equipe se conectem, colaborem e acompanhem o progresso de suas tarefas de maneira eficiente.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Descrição
+Este repositório contém o código-fonte de uma aplicação voltada para facilitar o gerenciamento e organização das equipes de desenvolvedores. A aplicação oferece recursos como:
 
-## Available Scripts
+Cadastro de membros da equipe: Adicionar e gerenciar os desenvolvedores que fazem parte da equipe.
+Gerenciamento de tarefas: Atribuir tarefas aos membros da equipe e monitorar seu progresso.
+Comunicação entre membros: Facilitar a troca de mensagens e informações importantes entre os membros da equipe.
+Painel de controle: Um dashboard visual para acompanhar o status das tarefas e atividades da equipe.
+Funcionalidades
+Cadastro de equipe: Criação e gerenciamento de equipes com múltiplos membros.
+Atribuição de tarefas: Organize e distribua tarefas entre os membros da equipe.
+Visualização de progresso: Acompanhe o andamento de tarefas com indicadores de status.
+Integração com ferramentas de colaboração: Integração com plataformas como Slack, GitHub ou outras ferramentas de comunicação.
+Notificações e alertas: Receba notificações sobre atualizações de tarefas ou mudanças importantes.
+Tecnologias Utilizadas
+Frontend: React.js, HTML, CSS, JavaScript
+Backend: Node.js, Express
+Banco de Dados: MongoDB
+Autenticação: JWT (JSON Web Token)
+Outras ferramentas: Docker, ESLint, Prettier
+Instalação
+Pré-requisitos
+Node.js (versão 14 ou superior)
+MongoDB (para armazenamento de dados)
+Git (para controle de versão)
+Passo a passo
+Clone o repositório:
 
-In the project directory, you can run:
+bash
+Copiar código
+git clone https://github.com/DeegohBR/dev_team.git
+Acesse o diretório do projeto:
 
-### `npm start`
+bash
+Copiar código
+cd dev_team
+Instale as dependências do backend:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copiar código
+cd backend
+npm install
+Instale as dependências do frontend:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copiar código
+cd ../frontend
+npm install
+Configure as variáveis de ambiente. Crie um arquivo .env com as configurações necessárias para o ambiente, como credenciais de banco de dados e chave secreta JWT.
 
-### `npm test`
+Execute o backend:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copiar código
+cd backend
+npm start
+Execute o frontend:
 
-### `npm run build`
+bash
+Copiar código
+cd frontend
+npm start
+Acesse a aplicação no navegador em http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contribuindo
+Contribuições são sempre bem-vindas! Se você deseja melhorar o projeto, siga as etapas abaixo:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Faça o fork deste repositório.
+Crie uma nova branch (git checkout -b feature/nome-da-sua-feature).
+Faça suas modificações e commit (git commit -am 'Adiciona nova funcionalidade').
+Envie para o seu fork (git push origin feature/nome-da-sua-feature).
+Abra um Pull Request com suas alterações.
+Licença
+Este projeto está licenciado sob a MIT License.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Autores
+DeegohBR - Desenvolvedor Principal
