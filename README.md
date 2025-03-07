@@ -21,7 +21,7 @@ Este repositório contém o código-fonte de uma aplicação focada no gerenciam
 • Frontend: React.js, HTML, CSS, JavaScript
 
 # Instalação
-# Pré-requisitos
+• Pré-requisitos
 Certifique-se de que você possui as seguintes ferramentas instaladas:
 
 • Node.js (versão 14 ou superior)
