@@ -1,85 +1,106 @@
-# dev_team
-dev_team é uma aplicação projetada para otimizar a gestão de equipes de desenvolvimento, proporcionando uma maneira eficiente de conectar membros, colaborar e acompanhar o progresso das tarefas.
+# Dev Team 
 
-# Descrição
-Este repositório contém o código-fonte de uma aplicação focada no gerenciamento e organização de equipes de desenvolvedores. A aplicação oferece funcionalidades essenciais para facilitar a colaboração, o acompanhamento das tarefas e a comunicação entre os membros da equipe.
+## Visão Geral
+Dev Team é uma aplicação React projetada para otimizar o gerenciamento de equipes de desenvolvimento. Ela fornece uma maneira eficiente de organizar membros da equipe, visualizar a estrutura da equipe e facilitar a colaboração entre diferentes departamentos.
 
-# Funcionalidades
-• Cadastro de Membros da Equipe: Adicione, remova e gerencie os desenvolvedores da sua equipe.<br>
-• Gestão de Tarefas: Atribua tarefas a membros da equipe, estabeleça prazos e monitore o progresso.<br>
-• Comunicação entre Membros: Facilite a troca de mensagens e informações importantes dentro da plataforma.<br>
-• Painel de Controle: Acesse um dashboard visual para monitorar o status das tarefas e atividades da equipe.<br>
+## Funcionalidades
+- **Organização de Equipes**: Categorize membros da equipe por departamento ou especialização
+- **Cards de Membros**: Crie cartões visuais para cada membro da equipe com suas informações
+- **Visualização de Departamentos**: Veja claramente como sua equipe está distribuída entre departamentos
+- **Design Responsivo**: Funcional em vários tamanhos de tela e dispositivos
 
-# Principais Recursos
-• Cadastro de Equipe: Crie e gerencie equipes compostas por múltiplos membros.<br>
-• Atribuição de Tarefas: Organize e distribua as tarefas de forma simples e eficaz.<br>
-• Visualização de Progresso: Acompanhe o andamento das tarefas com indicadores de status (e.g., "Em andamento", "Concluída").<br>
-• Integração com Ferramentas de Colaboração: Conecte-se a plataformas como Slack, GitHub e outras para centralizar a comunicação.<br>
-• Notificações e Alertas: Receba notificações sobre alterações de status das tarefas, atualizações importantes e prazos.<br>
+## Tecnologias Utilizadas
+- **Frontend**: React.js, CSS
+- **Gerenciamento de Estado**: React Hooks (useState)
+- **Implantação**: Processo de build padrão do React
 
-# Tecnologias Utilizadas
-• Frontend: React.js, HTML, CSS, JavaScript<br>
+## Estrutura
+A aplicação é estruturada com componentes modulares:
+- **Banner**: Componente de banner do cabeçalho
+- **Formulário**: Componente para envio de novos dados de membros da equipe
+- **Times**: Seções organizadas por departamento
+- **Cards de Membros**: Cartões individuais exibindo informações de membros da equipe
 
-# Instalação
-• Pré-requisitos
-Certifique-se de que você possui as seguintes ferramentas instaladas:<br>
-• Node.js (versão 14 ou superior)<br>
-• MongoDB (para o armazenamento de dados)<br>
-• Git (para controle de versão)<br>
+## Como Começar
 
-# Passo a Passo
-Clone o repositório:<br>
-bash<br>
-Copiar<br>
-git clone https://github.com/DeegohBR/dev_team.git<br>
-Acesse o diretório do projeto:<br>
-bash<br>
-Copiar<br>
-cd dev_team<br>
-Instale as dependências do backend:<br>
-bash<br>
-Copiar<br>
-cd backend<br>
-npm install<br>
+### Pré-requisitos
+- Node.js (v14.0.0 ou mais recente)
+- npm ou yarn
 
-# Instale as dependências do frontend
-bash<br>
-Copiar<br>
-cd ../frontend<br>
-npm install<br>
-Configure as variáveis de ambiente: Crie um arquivo .env no diretório raiz do projeto com as configurações necessárias para o ambiente, como credenciais do banco de dados e chave secreta JWT<br>.
+### Instalação
 
-# Execute o backend:
+1. Clone o repositório:
+```bash
+git clone https://github.com/SeuUsuario/dev_team.git
+cd dev_team
+```
 
-bash<br>
-Copiar<br>
-cd backend<br>
-npm start<br>
-Execute o frontend:<br>
-bash<br>
-Copiar<br>
-cd frontend<br>
-npm start<br>
-Acesse a aplicação no navegador em http://localhost:3000.<br>
-Contribuindo<br>
-Contribuições são sempre bem-vindas! Se você deseja melhorar o projeto, siga os passos abaixo:<br>
+2. Instale as dependências:
+```bash
+npm install
+```
 
-# Faça o fork deste repositório.
-Crie uma nova branch para sua feature:<br>
-bash<br>
-Copiar<br>
-git checkout -b feature/nome-da-sua-feature<br>
-Faça suas modificações e commit:<br>
-bash<br>
-Copiar<br>
-git commit -am 'Adiciona nova funcionalidade'<br>
-Envie para o seu fork:<br>
-bash<br>
-Copiar<br>
-git push origin feature/nome-da-sua-feature<br>
-Abra um Pull Request com suas alterações.<br>
-Licença<br>
-Este projeto está licenciado sob a MIT License.<br>
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm start
+```
 
-# Autores
-DeegohBR - Desenvolvedor Principal<br>
+4. Abra seu navegador e acesse:
+```
+http://localhost:3000
+```
+
+## Uso
+1. Preencha o formulário com informações do membro da equipe:
+   - Nome
+   - Cargo/Posição
+   - URL da imagem (opcional)
+   - Departamento/Time
+
+2. Clique em "Criar Card" para adicionar o membro da equipe ao seu respectivo departamento
+
+3. Visualize a organização da equipe rolando pelas diferentes seções de departamentos
+
+## Categorias de Times Disponíveis
+- Front-End
+- Data Science
+- DevOps
+- UX e Design
+- Mobile
+- Inovação e Gestão
+- Programação
+
+## Estrutura do Projeto
+```
+├── public/
+│   ├── Imagens/
+│   │   └── banner.png
+│   └── index.html
+└── src/
+    ├── Componentes/
+    │   ├── Banner/
+    │   ├── Botao/
+    │   ├── CampoTexto/
+    │   ├── Colaborador/
+    │   ├── Formulario/
+    │   ├── ListaSuspensa/
+    │   └── Time/
+    ├── App.js
+    └── index.js
+```
+
+## Contribuindo
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
+
+1. Faça um fork do repositório
+2. Crie sua branch de feature (`git checkout -b feature/recurso-incrivel`)
+3. Faça commit das suas alterações (`git commit -m 'Adiciona algum recurso incrível'`)
+4. Faça push para a branch (`git push origin feature/recurso-incrivel`)
+5. Abra um Pull Request
+
+## Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
+
+## Agradecimentos
+- Criado por Diogo Roumillac
+- Alura
